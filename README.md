@@ -50,6 +50,11 @@ bundle install
 rails s
 ```
 
+### Livereload
+
+Livereload will automatically reload your browser when you're making changes to JS/CSS or HTML.
+If you want to use this, you should use [rack-livereload](https://github.com/johnbintz/rack-livereload) or install [LiveReload Safari/Chrome extension](http://github.com/mockko/livereload#readme)
+
 ## Debugging
 
 ### Segmentation fault
