@@ -11,3 +11,25 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 
+
+(function() {
+
+  /*global require, angular, document */
+  'use strict';
+
+  require.config({
+    paths: {
+      angular: '/assets/angular'
+    },
+    shim: {
+      angular: {
+        exports: 'angular'
+      }
+    }
+  });
+
+  require(['angular', 'calcentral', 'controllers/dashboard'], function(angular) {
+      angular.bootstrap(document, ['calcentral']);
+  });
+
+})();
