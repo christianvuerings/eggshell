@@ -47,3 +47,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'minitest-reporters'
 end
+
+group :development do
+
+  # Automatically reloads your browser when 'view' files are modified.
+  # https://github.com/guard/guard-livereload
+  gem 'guard-livereload', '~> 1.1.0'
+  gem 'rack-livereload', '~> 0.3.8'
+end
