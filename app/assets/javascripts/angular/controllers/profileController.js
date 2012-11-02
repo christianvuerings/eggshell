@@ -1,6 +1,11 @@
-function ProfileController($scope, $http) {
+/**
+ * ProfileController
+ */
+function ProfileController($rootScope, $scope, $http) {
 
   'use strict';
+
+  $rootScope.title = 'Profile | Calcentral';
 }
 
-//ProfileController.$inject = ['$scope', '$http'];
+//ProfileController.$inject = ['$rootScope', '$scope', '$http'];

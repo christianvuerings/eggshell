@@ -1,6 +1,11 @@
-function SplashController($scope, $http) {
+/**
+ * SplashController
+ */
+function SplashController($rootScope, $scope, $http) {
 
   'use strict';
+
+  $rootScope.title = 'Home | Calcentral';
 }
 
-//SplashController.$inject = ['$scope', '$http'];
+//SplashController.$inject = ['$rootScope', '$scope', '$http'];

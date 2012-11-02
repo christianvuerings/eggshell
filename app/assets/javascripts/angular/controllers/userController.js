@@ -1,11 +1,8 @@
 /**
  * User controller
  */
-
-/*global */
-'use strict';
-
 function UserController($http, $scope) {
+  'use strict';
   $http.get('dummy/user.json').success(function(data) {
     $scope.user = data;
   });
