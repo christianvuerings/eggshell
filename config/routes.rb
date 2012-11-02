@@ -60,4 +60,8 @@ Eggshell::Application.routes.draw do
   match '/auth/failure' => 'sessions#failure'
   match '/logout' => 'sessions#destroy', :as => :logout
   match '/login' => 'sessions#new', :as => :login
+
+  # All the other paths should use the bootstrap page
+  # We need this if we use html5mode=true
+  match '/:page' => 'bootstrap#index'
 end

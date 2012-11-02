@@ -1,19 +1,24 @@
 (function() {
-  /*global angular, SplashCtrl*/
+  /*global angular, ProfileController, SplashController*/
   'use strict';
 
   /* App Module */
 
   angular.module('calcentral', []).
-    config(['$routeProvider', function($routeProvider) {
-    $routeProvider.
-        when('/', {
-          templateUrl: 'partials/splash.html',
-          controller: SplashCtrl
-        }).
-        otherwise({
-          redirectTo: '404.html'
-        });
-  }]);
+    config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+      $locationProvider.html5Mode(true).hashPrefix('!');
+      $routeProvider.when('/', {
+        templateUrl: 'partials/splash.html',
+        controller: SplashController
+      }).
+      when('/profile', {
+        templateUrl: 'partials/profile.html',
+        controller: ProfileController
+      }).
+      otherwise({
+        redirectTo: '404.html'
+      });
+    }]
+  );
 
 })();

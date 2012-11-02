@@ -11,4 +11,5 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require angular.min
-//= require_tree ./angular
+//= require_directory ./angular/controllers
+//= require_directory ./angular
