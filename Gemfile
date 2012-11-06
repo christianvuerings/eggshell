@@ -54,6 +54,10 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 2.0'
   gem 'minitest-reporters'
+
+  # Test your JavaScript without any framework dependencies,
+  # https://github.com/pivotal/jasmine-gem
+  gem 'jasmine', '~> 1.2.1'
 end
 
 group :development do

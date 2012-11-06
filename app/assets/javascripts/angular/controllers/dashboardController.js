@@ -10,3 +10,10 @@
   });
 })();
 
+/*
+
+  function DashboardController($rootScope, $scope, $http) {
+    $rootScope.title = 'Dashboard | Calcentral';
+  }
+
+*/
