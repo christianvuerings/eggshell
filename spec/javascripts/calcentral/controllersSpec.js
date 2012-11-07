@@ -1,18 +1,26 @@
 describe('CalCentral controllers', function() {
 
-  describe("Dashboard controller", function() {
+  beforeEach(module('calcentral'));
+
+  describe('Dashboard controller', function() {
+
+    var rootScope;
+    var ctrl;
 
     beforeEach(inject(function($rootScope, $controller) {
-      scope = $rootScope.$new();
-      ctrl = $controller(DashboardController, {
-        $scope: scope
+      rootScope = $rootScope.$new();
+
+      ctrl = $controller('DashboardController', {
+        $rootScope: rootScope
       });
     }));
 
-    it("should be able to find the dashboard controller", function() {
+    it("should have a defined dashboard controller", function() {
+      expect(ctrl).toBeDefined();
+    });
 
-      expect(scope.mine).toBeUndefined();
-
+    it("should set the page title", function() {
+      expect(rootScope.title).toBe('Dashboard | Calcentral');
     });
 
   });
