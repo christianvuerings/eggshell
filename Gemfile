@@ -11,9 +11,12 @@ gem 'activerecord-postgresql-adapter', '~> 0.0.1'
 # see http://stackoverflow.com/q/2038048/117193
 gem 'pg', '~> 0.14.1'
 
-# Oracle adapter
-gem 'ruby-oci8'
-gem 'activerecord-oracle_enhanced-adapter'
+group :custom do
+
+  # Oracle adapter
+  gem 'ruby-oci8'
+  gem 'activerecord-oracle_enhanced-adapter'
+end
 
 # A JSON implementation as a Ruby extension in C
 # http://flori.github.com/json/
