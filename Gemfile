@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source :rubygems
 
 # The core framework
 # https://github.com/rails/rails
