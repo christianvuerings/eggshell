@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-# The core framework
+# The core framewor
 # https://github.com/rails/rails
 gem "rails", "3.2.8"
 
