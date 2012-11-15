@@ -37,9 +37,7 @@ Eggshell::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  # Caching store
-  config.cache_store = ActiveSupport::Cache.lookup_store(:null_store)
-  config.cache_store.logger = Logger.new("#{Rails.root}/log/#{Rails.env}.log")
-  config.cache_store.logger.level = Logger::DEBUG
+  # Disable caching
+  config.action_controller.perform_caching = false
 
 end
